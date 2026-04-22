@@ -14,9 +14,9 @@ pub struct Epic {
 
 impl Epic {
     pub fn new(name: String, description: String) -> Self {
-        Epic {
-            name: "".to_string(),
-            description: "".to_string(),
+        Self {
+            name,
+            description,
             status: Status::Open,
             stories: vec![],
         }
@@ -31,9 +31,9 @@ pub struct Story {
 
 impl Story {
     pub fn new(name: String, description: String) -> Self {
-        Story {
-            name: "".to_string(),
-            description: "".to_string(),
+        Self {
+            name,
+            description,
             status: Status::Open,
         }
     }
